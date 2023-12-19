@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    <style>
+        header {
+            background-color: green;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: lightgreen;
+        }
+
+        .colored-box {
+            flex: 1;
+            height: 150px;
+            margin: 5px;
+            text-align: center;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            background-color: #4CAF50;
+            padding: 10px;
+        }
+
+        .project-title {
+            margin-bottom: 10px;
+            color: white;
+        }
+
+        .box-content {
+            color: white;
+            line-height: 1.5;
+        }
+
+        .green-box1 {
+            background-color: #4CAF50;
+        }
+
+        .green-box2 {
+            background-color: #8BC34A;
+        }
+
+        .green-box3 {
+            background-color: #CDDC39;
+        }
+
+        .social-bar {
+            background-color: black;
+            height: 40px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .social-logo {
+            color: white;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to my page</h1>
+    </header>
+
+    <nav>
+        <a href="#" onclick="alert('Home clicked');">Home</a>
+        <a href="#" onclick="alert('Project clicked');">Project</a>
+        <a href="#" onclick="alert('Contract clicked');">Contract</a>
+    </nav>
+
+    <section style="display: flex;">
+        <div class="colored-box green-box1">
+            <div class="project-title">Project A</div>
+            <div class="box-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+        </div>
+        <div class="colored-box green-box2">
+            <div class="project-title">Project B</div>
+            <div class="box-content">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+        </div>
+        <div class="colored-box green-box3">
+            <div class="project-title">Project C</div>
+            <div class="box-content">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
+        </div>
+    </section>
+
+    <div class="social-bar">
+        <img src="74397.png">
+    </div>
+
+</body>
+</html>
